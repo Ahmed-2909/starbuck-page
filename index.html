@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body > 
+    <section>
+    <div class="w-8/12 h-full rounded-tl-full  bg-green-700 absolute -z-10 top-72 right-0" id="circle"></div> 
+    </section> 
+    <div class=" max-w-7xl mx-auto my-16 h-fit flex items-center">
+        <div class="w-1/5 relative left-10 mx-5">
+            <img src="logo.png" alt="no logo" class="">
+        </div>
+        <div class=" w-4/5 flex justify-end h-fit  items-center">
+            <ul class="flex justify-end space-x-14 mx-5 text-2xl font-bold ">
+                <li><a href="#" class="link link-underline link-underline-black hover:text-green-700 duration-500 tr">Home</a></li>
+                <li><a href="#" class="link link-underline link-underline-black hover:text-green-700">What's New's</a></li>
+                <li><a href="#" class="link link-underline link-underline-black hover:text-green-700">Menu</a></li>
+                <li><a href="#" class="link link-underline link-underline-black hover:text-green-700">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-full flex justify-between ">
+        <div class="ml-10 w-2/5 my-16 mr-16">
+            <h2 class="text-6xl font-bold my-8">It's not just Coffee, It'<span class="text-green-700 mx-2">Starbucks</span></h2>
+            <p class="text-2xl my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora cupiditate vel suscipit qui in ea,
+                quidem porro, omnis doloremque sapiente animi! Error! Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="p-2 bg-green-700 rounded-full text-white text-2xl font-bold my-10">Learn More</a>    
+            </div>
+            <div class="mx-20 w-2/5 relative left-20">
+                <img src="img1.png" alt="no img" class="star">
+            </div>
+            <div class="mx-5 my-auto ">
+                <ul >
+                    <li class="my-7"><img  class="" src="facebook.png" alt=""></li>
+                    <li class="my-7"><img src="instagram.png" alt=""></li>
+                    <li class="my-7"><img src="twitter.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    <div class="flex w-full justify-center mt-10 mb-5  ">
+        
+            <img class="mx-5 duration-500 cursor-pointer hover:-translate-y-14" src="thumb1.png" alt="" onclick="imgslider('img1.png');changecolor('#15803D')">
+            <img class="mx-5 duration-500 cursor-pointer hover:-translate-y-14" src="thumb2.png" alt="" onclick="imgslider('img2.png');changecolor('#eb7495')">
+            <img class="mx-5 duration-500 cursor-pointer hover:-translate-y-14" src="thumb3.png" alt="" onclick="imgslider('img3.png');changecolor('#d752b1')">
+        
+    </div> 
+    <script>
+        function imgslider(any){
+            document.querySelector('.star').src = any;
+        }
+        function changecolor(color){
+            const circle = document.querySelector('#circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
